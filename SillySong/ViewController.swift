@@ -29,7 +29,7 @@ func lyricsForName(lyricsTemplate: String, fullName: String) -> String {
 func shortNameForName(name: String) -> String {
     let lowercaseName = name.lowercased()
     let vowelSet = CharacterSet(charactersIn: "aeiou")
-    return ""
+    return name
 }
 
 /*
@@ -41,8 +41,6 @@ func shortNameFromName(name: String) -> String {
     // implementation here
     return ""
 }
-
-
 
 // print(lyricsForName(lyricsTemplate: bananaFanaTemplate, fullName: "Nate"))
 // Nate, Nate, Bo Bate
@@ -81,7 +79,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func displayLyrics(_ sender: Any) {
-        lyricsView.text = nameField.text
+        
+        let name = nameField.text
+        lyricsView.text = lyricsForName(lyricsTemplate: bananaFanaTemplate, fullName: name!)
     }
 }
 
