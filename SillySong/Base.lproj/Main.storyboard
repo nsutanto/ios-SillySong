@@ -36,20 +36,20 @@
                                 <rect key="frame" x="16" y="128" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                 <connections>
                                     <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="9vX-m2-F4f"/>
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="F4H-v1-fuZ"/>
                                 </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="auc-ad-vgW">
-                                <rect key="frame" x="65.5" y="166" width="244" height="128"/>
+                                <rect key="frame" x="65.5" y="166" width="244" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="ESO-bM-uus"/>
+                                    <constraint firstAttribute="height" constant="150" id="ESO-bM-uus"/>
                                     <constraint firstAttribute="width" constant="244" id="bUj-Rm-aQF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>

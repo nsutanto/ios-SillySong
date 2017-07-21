@@ -29,24 +29,14 @@ func lyricsForName(lyricsTemplate: String, fullName: String) -> String {
 func shortNameForName(name: String) -> String {
     let lowercaseName = name.lowercased()
     let vowelSet = CharacterSet(charactersIn: "aeiou")
-    return name
+    
+    if let firstVowelRange = name.rangeOfCharacter(from: vowelSet, options: .caseInsensitive) {
+        return lowercaseName.substring(from: firstVowelRange.lowerBound)
+    }
+    
+    // No vowels - return the full name
+    return lowercaseName
 }
-
-/*
- func customizeTemplate(name, template) {
- }
- */
-
-func shortNameFromName(name: String) -> String {
-    // implementation here
-    return ""
-}
-
-// print(lyricsForName(lyricsTemplate: bananaFanaTemplate, fullName: "Nate"))
-// Nate, Nate, Bo Bate
-// Banana Fana Fo Fate
-// Me My Mo Mate
-// Nate
 
 
 
