@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 let bananaFanaTemplate = [
     "<FULL_NAME>, <FULL_NAME>, Bo B<SHORT_NAME>",
     "Banana Fana Fo F<SHORT_NAME>",
