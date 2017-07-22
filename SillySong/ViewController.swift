@@ -8,8 +8,6 @@
 
 import UIKit
 
-<<<<<<< HEAD
-
 let bananaFanaTemplate = [
     "<FULL_NAME>, <FULL_NAME>, Bo B<SHORT_NAME>",
     "Banana Fana Fo F<SHORT_NAME>",
@@ -57,20 +55,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameField.delegate = self
-=======
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
->>>>>>> master
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-<<<<<<< HEAD
     
     @IBAction func reset(_ sender: Any) {
         nameField.text = ""
@@ -82,9 +72,5 @@ class ViewController: UIViewController {
         let name = nameField.text
         lyricsView.text = lyricsForName(lyricsTemplate: bananaFanaTemplate, fullName: name!)
     }
-=======
-
-
->>>>>>> master
 }
 
