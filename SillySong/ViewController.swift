@@ -29,7 +29,7 @@ func shortNameForName(name: String) -> String {
     let lowercaseName = name.lowercased()
     let vowelSet = CharacterSet(charactersIn: "aeiou")
     
-    if let firstVowelRange = name.rangeOfCharacter(from: vowelSet, options: .caseInsensitive) {
+    if let firstVowelRange = lowercaseName.rangeOfCharacter(from: vowelSet) {
         return lowercaseName.substring(from: firstVowelRange.lowerBound)
     }
     
@@ -55,11 +55,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameField.delegate = self
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func reset(_ sender: Any) {
