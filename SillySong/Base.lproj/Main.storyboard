@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="height" constant="100" id="3cE-5M-jt9"/>
                                     <constraint firstAttribute="width" constant="200" id="pLN-EK-Pgy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.29143404919999999" blue="0.89898872119999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -43,11 +43,10 @@
                                 </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="auc-ad-vgW">
-                                <rect key="frame" x="66" y="166" width="244" height="150"/>
+                                <rect key="frame" x="16" y="166" width="344" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="ESO-bM-uus"/>
-                                    <constraint firstAttribute="width" constant="244" id="bUj-Rm-aQF"/>
+                                    <constraint firstAttribute="height" constant="200" id="ESO-bM-uus"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -60,12 +59,9 @@
                             <constraint firstItem="GaX-OK-6NI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4w9-kp-LBD"/>
                             <constraint firstItem="GaX-OK-6NI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MwM-42-PbA"/>
                             <constraint firstItem="GaX-OK-6NI" firstAttribute="top" secondItem="b2U-XU-THg" secondAttribute="bottom" constant="8" id="N9C-Tq-WoY"/>
-                            <constraint firstItem="GaX-OK-6NI" firstAttribute="centerX" secondItem="auc-ad-vgW" secondAttribute="centerX" id="VyL-B1-tKO"/>
                             <constraint firstItem="b2U-XU-THg" firstAttribute="top" secondItem="7F3-UZ-p1R" secondAttribute="bottom" id="cL6-36-xDk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GaX-OK-6NI" secondAttribute="trailing" id="eDu-Mb-ONw"/>
-                            <constraint firstItem="auc-ad-vgW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="49.5" id="rcR-12-Zdw"/>
+                            <constraint firstItem="auc-ad-vgW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rcR-12-Zdw"/>
                             <constraint firstItem="b2U-XU-THg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uiF-5R-oj0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="auc-ad-vgW" secondAttribute="trailing" constant="49.5" id="xAT-Jp-jeO"/>
                         </constraints>
                     </view>
                     <connections>
