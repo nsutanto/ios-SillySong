@@ -16,14 +16,22 @@ let bananaFanaTemplate = [
 
 
 func lyricsForName(lyricsTemplate: String, fullName: String) -> String {
-    let shortName = shortNameForName(name: fullName)
+    
+    if (fullName != "") {
+        let shortName = shortNameForName(name: fullName)
  
-    let lyrics = lyricsTemplate
-        .replacingOccurrences(of: "<FULL_NAME>", with: fullName)
-        .replacingOccurrences(of: "<SHORT_NAME>", with: shortName)
- 
-    return lyrics
+        let lyrics = lyricsTemplate
+            .replacingOccurrences(of: "<FULL_NAME>", with: fullName)
+            .replacingOccurrences(of: "<SHORT_NAME>", with: shortName)
+        
+        return lyrics
+    }
+    else
+    {
+        return ""
+    }
 }
+ 
 
 func shortNameForName(name: String) -> String {
     let lowercaseName = name.lowercased()
